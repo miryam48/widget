@@ -28,11 +28,26 @@ class _myappState extends State<myapp> {
         title: Text('Example'),
         centerTitle: true,
       ),
-      body:  Column(
-        children: [
-          TextField(
-          )
-        ],
+      body:  Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          children: [
+            TextField(
+              controller: _controller,
+                decoration: InputDecoration(
+                  labelText: 'Enter Your text',
+                ),
+            ),
+            SizedBox(height: 16,),
+            ElevatedButton(
+                onPressed: (){
+                  String enteredText= _controller.text;
+                  print('Entered text:$enteredText');
+                },
+                child: Text('Submit')
+            )
+          ],
+        ),
       ),
     );
   }
