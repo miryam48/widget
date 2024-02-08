@@ -22,8 +22,16 @@ class _myappState extends State<myapp> {
           padding: EdgeInsets.zero,
           children: [
             DrawerHeader(
-              decoration: BoxDecoration(color: Colors.red),
-                child: Text('Drawer Header')
+              padding: EdgeInsets.zero,
+                child: UserAccountsDrawerHeader(
+                  decoration: BoxDecoration(color: Colors.red),
+                  accountEmail: Text('Aadhil'),
+                  accountName: Text('Aadhil1234@gmail.com'),
+                  currentAccountPicture: CircleAvatar(
+                    backgroundImage: AssetImage('lib/ asset/babygirl.jpg'),
+                  ),
+                )
+
             ),
             ListTile(
               leading: Icon(Icons.home),
