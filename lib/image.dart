@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-void main(){
-  runApp(MaterialApp(debugShowCheckedModeBanner: false,home: myapp(),));
-}
-class myapp extends StatefulWidget {
-  const myapp({super.key});
+// void main(){
+//   runApp(MaterialApp(debugShowCheckedModeBanner: false,home: image(),));
+// }
+class image extends StatefulWidget {
+  const image({super.key});
 
   @override
-  State<myapp> createState() => _myappState();
+  State<image> createState() => _imageState();
 }
-class _myappState extends State<myapp> {
+class _imageState extends State<image> {
   Widget padd=SizedBox(height: 10,);
   @override
   Widget build(BuildContext context) {

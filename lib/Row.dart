@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-void main(){
-  runApp(MaterialApp(debugShowCheckedModeBanner: false,home: myapp(),));
-}
-class myapp extends StatefulWidget {
-  const myapp({super.key});
+// void main(){
+//   runApp(MaterialApp(debugShowCheckedModeBanner: false,home: row(),));
+// }
+class row extends StatefulWidget {
+  const row({super.key});
 
   @override
-  State<myapp> createState() => _myappState();
+  State<row> createState() => _rowState();
 }
 
-class _myappState extends State<myapp> {
+class _rowState extends State<row> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

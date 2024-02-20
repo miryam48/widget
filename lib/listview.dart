@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
-void main(){
- runApp(MaterialApp(
-   debugShowCheckedModeBanner: false,
-   home: myapp(),));
-}
-class myapp extends StatefulWidget {
-  const myapp({super.key});
+// void main(){
+//  runApp(MaterialApp(
+//    debugShowCheckedModeBanner: false,
+//    home: listview(),));
+// }
+class listview extends StatefulWidget {
+  const listview({super.key});
 
   @override
-  State<myapp> createState() => _myappState();
+  State<listview> createState() => _listviewState();
 }
 
-class _myappState extends State<myapp> {
+class _listviewState extends State<listview> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
